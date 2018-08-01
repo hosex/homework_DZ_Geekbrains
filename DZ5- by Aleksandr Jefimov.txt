@@ -1,0 +1,135 @@
+﻿package DZ5;
+
+public class Main {
+
+    public static void main(String[] args) {
+        /**
+         * Создать класс "Сотрудник" с полями: ФИО, должность, email, телефон, зарплата, возраст;
+         * Конструктор класса должен заполнять эти поля при создании объекта;
+         * Внутри класса «Сотрудник» написать метод, который выводит информацию об объекте в консоль;
+         * Создать массив из 5 сотрудников
+         * Пример:
+         * Person[] persArray = new Person[5]; // Вначале объявляем массив объектов
+         * persArray[0] = new Person("Ivanov Ivan", "Engineer", "ivivan@mailbox.com", "892312312", 30000,30);
+         * // потом для каждой ячейки массива задаем объект
+         * persArray[1] = new Person(...);
+         * persArray[4] = new Person(...);
+         * С помощью цикла вывести информацию только о сотрудниках старше 40 лет;
+         */
+        class Employee {
+            private Person[] persArray;
+            public String fio;
+            public String position;
+            public String email;
+            public String phone;
+            public double salary;
+            public int age;
+
+            Employee(String fio, String position, String email, String phone, double salary, int age) {
+                this.fio = fio;
+                this.position = position;
+                this.email = email;
+                this.phone = phone;
+                this.salary = salary;
+                this.age = age;
+                System.out.println("This is the class Ivan");
+                fio = "Ivanov Ivan Ivaynch";
+                position = "single man";
+                email = "ivanov@ya.ru";
+                phone = "1111111";
+                salary = 10000;
+                age = 38;
+
+                persArray[1] = new Person("Ivan");
+
+                System.out.println("This is the class Peter");
+                fio = "Glebov Petr Petrovich";
+                position = "single man";
+                email = "glebov@ya.ru";
+                phone = "2222222";
+                salary = 10000;
+                age = 35;
+
+                persArray[2] = new Person("Petr");
+
+                System.out.println("This is the class Oleg");
+                fio = "Porodin Oleg Ivaynch";
+                position = "single man";
+                email = "porodin@ya.ru";
+                phone = "3333333";
+                salary = 10000;
+                age = 42;
+
+                persArray[3] = new Person("Oleg");
+
+                System.out.println("This is the class Igor");
+                fio = "Ogorenko Igor Ivaynch";
+                position = "divorced man";
+                email = "ogorenko@ya.ru";
+                phone = "4444444";
+                salary = 10000;
+                age = 47;
+
+                persArray[4] = new Person("Igor");
+
+                System.out.println("This is the class Andry");
+                fio = "Angro Andry Fedin";
+                position = "in marriage";
+                email = "angeo@ya.ru";
+                phone = "5555555";
+                salary = 10000;
+                age = 44;
+
+                persArray[5] = new Person(" Andry");
+            }
+
+            public void getOver40old(Employee[] employees) {
+                for (Employee employee : employees) {
+
+                    if (employee.age > 40) {
+                        System.out.println(employee.toString());
+                    }
+                }
+            }
+
+            @Override
+            public String toString() {
+                return "Employee{" +
+                        "fio='" + fio + '\'' +
+                        ", position='" + position + '\'' +
+                        ", email='" + email + '\'' +
+                        ", phone='" + phone + '\'' +
+                        ", salary=" + salary +
+                        ", age=" + age +
+                        '}';
+            }
+        }
+    }
+}
+
+
+public class Employe {
+    public Employe(String s) {
+        String fio ;
+        String position;
+        String email;
+        String phone;
+        double salaray;
+        int age;
+
+    }
+}
+
+
+
+
+package DZ5;
+
+public class Person {
+    public Person(String s) {
+    }
+}
+
+
+
+
